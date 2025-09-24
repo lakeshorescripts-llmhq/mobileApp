@@ -1,3 +1,6 @@
+const PropertiesReader = require('properties-reader');
+const props = PropertiesReader('./config.properties');
+
 require('dotenv').config();
 
 exports.config = {
