@@ -1,0 +1,39 @@
+# Node & Package Managers
+node_modules/
+npm/
+yarn/
+
+# Environment & Config
+*.env
+.env.*
+browserstack.yml
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.iml
+.DS_Store
+# Logs
+*.log
+
+# Build & Output
+dist/
+coverage/
+reports/
+test-results/
+
+# Mobile Artifacts
+*.apk
+*.aab
+*.ipa
+*.keystore
+*.jks
+*.p12
+*.pem
+*.crt
+*.der
+
+# Misc
+*.zip
+*.tar.gz
+.eslintcache
