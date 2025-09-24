@@ -11,12 +11,22 @@ exports.config = {
   services: [],
 
   capabilities: [{
-    platformName: 'Android',
+  platformName: 'Android', // ✅ stays at top level
+  'appium:app': process.env.BROWSERSTACK_APP_ID, // ✅ W3C-compliant key
+  //automationName: 'UiAutomator2',
+  'bstack:options': {
     deviceName: 'Samsung Galaxy S21',
-    platformVersion: '12.0', // Optional: specify version if needed
-    app: process.env.BROWSERSTACK_APP_ID, // Make sure this is an APK file
-    automationName: 'UiAutomator2',
-  }],
+    osVersion: '12.0', // ✅ use osVersion instead of platformVersion
+    
+    projectName: 'dqueza mobile app',
+    buildName: 'My First Build',
+    appiumVersion: '2.0.0', // optional but recommended
+    debug: true,
+    video: true,
+    networkLogs: true
+  }
+}],
+
 
   logLevel: 'info',
   framework: 'mocha',
