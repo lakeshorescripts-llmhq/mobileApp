@@ -22,8 +22,11 @@
   "devDependencies": {
     "@playwright/test": "^1.55.1",
     "@types/node": "^24.5.2",
+    "@wdio/appium-service": "^9.19.2",
     "@wdio/browserstack-service": "^9.19.2",
     "@wdio/types": "^9.19.2",
+    "appium-uiautomator2-driver": "^4.2.9",
+    "appium-xcuitest-driver": "^9.10.5",
     "browserstack-node-sdk": "^1.42.8"
   }
 }
