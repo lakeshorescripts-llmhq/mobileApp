@@ -10,13 +10,28 @@ exports.config = {
   specs: ['./test/app.test.js'],
   services: [],
 
-  capabilities: [{
-  platformName: 'iOS', // ✅ updated to iOS
+//   capabilities: [{
+//   platformName: 'iOS', // ✅ updated to iOS
+//   'appium:app': process.env.BROWSERSTACK_APP_ID, // ✅ W3C-compliant key
+//   'bstack:options': {
+//     deviceName: 'iPhone 13', // ✅ example iOS device
+//     osVersion: '15.0', // ✅ iOS version
+//     projectName: 'dqueza mobile app',
+//     buildName: 'My First Build',
+//     appiumVersion: '2.0.0', // optional but recommended
+//     debug: true,
+//     video: true,
+//     networkLogs: true
+//   }
+// }],
+
+capabilities: [{
+  platformName: 'Android', // ✅ updated to Android
   'appium:app': process.env.BROWSERSTACK_APP_ID, // ✅ W3C-compliant key
 
   'bstack:options': {
-    deviceName: 'iPhone 13', // ✅ example iOS device
-    osVersion: '15.0', // ✅ iOS version
+    deviceName: 'Samsung Galaxy S21', // ✅ Android device
+    osVersion: '12.0', // ✅ Android OS version
     projectName: 'dqueza mobile app',
     buildName: 'My First Build',
     appiumVersion: '2.0.0', // optional but recommended
