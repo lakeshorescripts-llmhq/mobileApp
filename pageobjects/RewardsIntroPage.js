@@ -4,15 +4,21 @@ const props = PropertiesReader('./config.properties');
 
 class RewardsIntroPage {
   get joinNowButton() {
-    return $(props.get('joinNowButton'));
+    return driver.isAndroid
+      ? $(props.get('joinNowButton'))
+      : $(props.get('joinNowButtonIOS'));
   }
 
   get alreadyAMemberButton() {
-    return $(props.get('alreadyAMemberButton'));
+    return driver.isAndroid
+      ? $(props.get('alreadyAMemberButton'))
+      : $(props.get('alreadyAMemberButtonIOS'));
   }
 
   get maybeLaterLink() {
-    return $(props.get('maybeLaterLink'));
+    return driver.isAndroid
+      ? $(props.get('maybeLaterLink'))
+      : $(props.get('maybeLaterLinkIOS')) ;
   }
 
   async skipIntro() {

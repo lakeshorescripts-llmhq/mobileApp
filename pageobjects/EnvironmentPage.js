@@ -4,11 +4,15 @@ const props = PropertiesReader('./config.properties');
 
 class EnvironmentPage {
   get radioButtonUAT() {
-    return $(props.get('radioButtonUAT'));
+    return driver.isAndroid
+      ? $(props.get('radioButtonUAT'))
+      : $(props.get('radioButtonUATIOS'));
   }
 
   get continueButton() {
-    return $(props.get('continueButton'));
+    return driver.isAndroid
+      ? $(props.get('continueButton'))
+      : $(props.get('continueButtonIOS'));
   }
 
   async selectUATEnvironment() {
