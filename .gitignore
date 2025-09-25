@@ -37,3 +37,9 @@ test-results/
 *.zip
 *.tar.gz
 .eslintcache
+
+# Playwright
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
