@@ -11,13 +11,12 @@ exports.config = {
   services: [],
 
   capabilities: [{
-  platformName: 'Android', // ✅ stays at top level
+  platformName: 'iOS', // ✅ updated to iOS
   'appium:app': process.env.BROWSERSTACK_APP_ID, // ✅ W3C-compliant key
-  //automationName: 'UiAutomator2',
+
   'bstack:options': {
-    deviceName: 'Samsung Galaxy S21',
-    osVersion: '12.0', // ✅ use osVersion instead of platformVersion
-    
+    deviceName: 'iPhone 13', // ✅ example iOS device
+    osVersion: '15.0', // ✅ iOS version
     projectName: 'dqueza mobile app',
     buildName: 'My First Build',
     appiumVersion: '2.0.0', // optional but recommended
@@ -26,6 +25,7 @@ exports.config = {
     networkLogs: true
   }
 }],
+
 
 
   logLevel: 'info',

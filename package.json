@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -23,6 +21,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.55.1",
+    "@types/node": "^24.5.2",
     "@wdio/types": "^9.19.2",
     "browserstack-node-sdk": "^1.42.8"
   }
