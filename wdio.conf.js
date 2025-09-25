@@ -8,7 +8,13 @@ exports.config = {
   key: process.env.BROWSERSTACK_ACCESS_KEY,
 
   specs: ['./test/app.test.js'],
-  services: [],
+  services: [
+  ['browserstack', {
+    testObservability: true,
+    browserstackLocal: false, // set to true if testing local apps
+  }]
+],
+
 
 //   capabilities: [{
 //   platformName: 'iOS', // ✅ updated to iOS
