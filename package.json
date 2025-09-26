@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx wdio run wdio.conf.js",
+    "test:playwright": "npx playwright test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
